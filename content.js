@@ -28,7 +28,7 @@ function waitForElement(selector, maxAttempts = 10) {
 function isJiraIssuePage() {
     const isJiraUrl = window.location.href.includes('/browse/');
     const hasTitle = !!document.querySelector('h1[data-test-id="issue.views.issue-base.foundation.summary.heading"]');
-    console.log('URL的检查:', isJiraUrl, '标题检查:', hasTitle, 'URL:', window.location.href);
+    console.log('URL的检查:', isJiraUrl, '标题的检查:', hasTitle, 'URL:', window.location.href);
     return isJiraUrl;  // 暂时只检查URL
 }
 
