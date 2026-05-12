@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JiraAce Mock Tests</title>
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            margin: 24px;
+            background: #f5f7fb;
+            color: #172b4d;
+        }
+
+        #summary {
+            margin: 16px 0;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-weight: 600;
+            background: white;
+            border: 1px solid #dfe1e6;
+        }
+
+        #results {
+            display: grid;
+            gap: 8px;
+        }
+
+        .result {
+            padding: 10px 12px;
+            border-radius: 8px;
+            background: white;
+            border: 1px solid #dfe1e6;
+        }
+
+        .pass {
+            color: #0b6b3a;
+            background: #e3fcef;
+            border-color: #abf5d1;
+        }
+
+        .fail {
+            color: #ae2e24;
+            background: #ffebe6;
+            border-color: #ffbdad;
+        }
+    </style>
+</head>
+<body>
+    <h1>JiraAce Mock Browser Tests</h1>
+    <p>These tests run against a local mock issue page, not the real Jira site.</p>
+    <div id="summary">Running tests...</div>
+    <div id="fixture"></div>
+    <div id="results"></div>
+
+    <script src="./bootstrap.js"></script>
+    <script src="../../../../src/config.js"></script>
+    <script src="../../../../src/utils.js"></script>
+    <script src="../../../../src/warnings.js"></script>
+    <script src="../../../../src/ticket-panel.js"></script>
+    <script src="./run-tests.js"></script>
+</body>
+</html>

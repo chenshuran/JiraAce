@@ -1,0 +1,1 @@
+window.JiraAce = window.JiraAce || {};

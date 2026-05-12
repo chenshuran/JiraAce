@@ -13,7 +13,13 @@
   "content_scripts": [
     {
       "matches": ["https://jira.ringcentral.com/*"],
-      "js": ["content.js"],
+      "js": [
+        "src/config.js",
+        "src/utils.js",
+        "src/warnings.js",
+        "src/ticket-panel.js",
+        "src/main.js"
+      ],
       "run_at": "document_end"
     }
   ],
